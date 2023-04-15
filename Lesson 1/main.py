@@ -25,12 +25,8 @@ def print_quarter_values(quarter):
 
 # Задача № 4
 def print_even_numbers(number):
-    numbers = []
-    current_number = 2
-    while (current_number <= number):
-        if current_number % 2 == 0: numbers.append(current_number)
-        current_number += 2
-    print(numbers)
+    for i in range(2, number + 1, 2):
+        print(i, end=", " if i < number and i + 1 != number else "")
 
 print("Задача № 1")
 day_number = int(input("Введите день недели: "))
