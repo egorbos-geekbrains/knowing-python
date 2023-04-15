@@ -1,3 +1,5 @@
+from math import sqrt
+
 # Задача № 1
 def print_weekday_name(day_number):
     if (day_number < 1 or day_number > 7):
@@ -10,5 +12,20 @@ def print_weekday_name(day_number):
     elif day_number == 6: print("Суббота")
     else: print("Воскресенье")
 
+# Задача № 2
+def calc_2d_distance(x1, y1, x2, y2):
+    return sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2))
+
+print("Задача № 1")
 day_number = int(input("Введите день недели: "))
 print_weekday_name(day_number)
+
+print("\nЗадача № 2")
+print("Введите координаты точки A.")
+x1 = float(input("Координата X: "))
+y1 = float(input("Координата Y: "))
+print("Введите координаты точки B.")
+x2 = float(input("Координата X: "))
+y2 = float(input("Координата Y: "))
+distance = calc_2d_distance(x1, y1, x2, y2)
+print(f"Результат: {distance:.2f}")
