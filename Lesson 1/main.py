@@ -23,6 +23,15 @@ def print_quarter_values(quarter):
     elif quarter == 3: print("x < 0, y < 0")
     elif quarter == 4: print("x > 0, y < 0")
 
+# Задача № 4
+def print_even_numbers(number):
+    numbers = []
+    current_number = 2
+    while (current_number <= number):
+        if current_number % 2 == 0: numbers.append(current_number)
+        current_number += 2
+    print(numbers)
+
 print("Задача № 1")
 day_number = int(input("Введите день недели: "))
 print_weekday_name(day_number)
@@ -42,3 +51,9 @@ quarter = int(input("Введите номер четверти: "))
 while (quarter < 1 or quarter > 4):
     quarter = int(input("Вы ошиблись!\nВведите номер четверти: "))
 print_quarter_values(quarter)
+
+print("\nЗадача № 4")
+number = int(input("Введите число: "))
+while number < 0:
+    number = int(input("Число должно быть положительным!\nВведите число: "))
+print_even_numbers(number)
