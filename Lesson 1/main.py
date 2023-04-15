@@ -16,6 +16,13 @@ def print_weekday_name(day_number):
 def calc_2d_distance(x1, y1, x2, y2):
     return sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2))
 
+# Задача № 3
+def print_quarter_values(quarter):
+    if quarter == 1: print("x > 0, y > 0")
+    elif quarter == 2: print("x < 0, y > 0")
+    elif quarter == 3: print("x < 0, y < 0")
+    elif quarter == 4: print("x > 0, y < 0")
+
 print("Задача № 1")
 day_number = int(input("Введите день недели: "))
 print_weekday_name(day_number)
@@ -29,3 +36,9 @@ x2 = float(input("Координата X: "))
 y2 = float(input("Координата Y: "))
 distance = calc_2d_distance(x1, y1, x2, y2)
 print(f"Результат: {distance:.2f}")
+
+print("\nЗадача № 3")
+quarter = int(input("Введите номер четверти: "))
+while (quarter < 1 or quarter > 4):
+    quarter = int(input("Вы ошиблись!\nВведите номер четверти: "))
+print_quarter_values(quarter)
