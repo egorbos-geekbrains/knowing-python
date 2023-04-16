@@ -13,3 +13,11 @@ for x in range(2):
     for y in range(2):
         for z in range(2):
             print(f"| {x} | {y} | {z} |       {int(not (x and y) or z)}      |")
+
+print("\nЗадача № 3")
+count_dict = {}
+first_line = input("Введите первую строку: ").lower()
+second_line = input("Введите вторую строку: ").lower()
+for char in first_line:
+    count_dict[char] = second_line.count(char)
+print(count_dict)
