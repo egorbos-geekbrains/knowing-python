@@ -1,4 +1,4 @@
-from math import sqrt
+from math import sqrt, pi
 
 # Вспомогательные функции
 def read_file_lines(filename: str):
@@ -36,3 +36,7 @@ icecream = read_file_lines("icecream.txt")
 assortment = set(split_list_values(icecream[0]))
 in_stock = set(split_list_values(icecream[1]))
 print(f"Закончилось: {', '.join(assortment.difference(in_stock))}")
+
+print("\nЗадача № 3")
+precision = int(input("Введите точность вывода: "))
+print(f"Результат: {round(pi, precision)}")
