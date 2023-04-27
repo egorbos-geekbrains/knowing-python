@@ -55,10 +55,10 @@ def convert_polynomial_to_string(polynomial: tuple):
         if part_number == 0:
             result += f'{part}x^2'
         elif part_number == 1 and part != 0:
-            part_value = int(sqrt(pow(part, 2)))
+            part_value = int(abs(part))
             result += f' {"+" if part > 0 else "-"} {part_value if part_value != 1 else ""}x'
         elif part_number == 2 and part != 0:
-            part_value = int(sqrt(pow(part, 2)))
+            part_value = int(abs(part))
             result += f' {"+" if part > 0 else "-"} {part_value}'
         part_number += 1
     return result
