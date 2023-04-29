@@ -24,3 +24,10 @@ numbers = [randint(1, 10) for _ in range(9)]
 print(f"Оригинальный список: {numbers}")
 print("Возрастающие последовательности: ", end='')
 print(*get_ascending_sequences(numbers), sep=', ')
+
+print("\nЗадача № 3")
+numbers = [randint(1, 10) for _ in range(9)]
+print(f"Оригинальный список: {numbers}")
+count_dict = {i: numbers.count(i) for i in numbers}
+unique_count = sum(filter(lambda e: e > 1, count_dict.values()))
+print(f"{unique_count} элемента(ов) совпадают, список уникальных элементов - {list(count_dict.keys())}")
