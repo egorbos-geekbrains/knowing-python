@@ -22,6 +22,13 @@ def contains_num_by_digits_in_list(list: list[int], number: str):
         if index == 3: return True
     return False
 
+# Задача № 3
+def is_fraction_irreducible(numerator: int, denominator: int):
+    for i in range(2, denominator, 1):
+        if numerator % i == 0 and denominator % i == 0:
+            return False
+    return True
+
 print('Задача № 1')
 number = input('Введите число: ')
 print(f'{number} + {number*2} + {number*3} = {magic_calc(int(number))}')
@@ -34,3 +41,13 @@ while (len(number) < 3 or len(number) > 3):
     number = int(input('Число должно быть трёхзначным! Введите число: '))
 contains_digits = contains_num_by_digits_in_list(num_list, number)
 print(f'Список {"" if contains_digits else "не "}содержит последовательность, совпадающую с введённым числом.')
+
+print('\nЗадача № 3')
+fractions = []
+for i in range(2, 10):
+    for j in range(1, 9):
+        if j == i: continue
+        elif j < i and is_fraction_irreducible(j, i):
+            fractions.append(f'{j}/{i}')
+print("Ответ: ", end='')
+print(*fractions, sep=', ')
