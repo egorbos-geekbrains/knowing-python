@@ -1,3 +1,4 @@
+import os
 import sys
 import telebot
 from random import randint
@@ -31,8 +32,10 @@ def test_func(): print('Magic!', end=' ')
 test_func()
 
 # https://t.me/GuessRandomNumberBot
-print('\nЗадача № 3')
-if len(sys.argv) < 2:
+print('\n\nЗадача № 3')
+token = sys.argv[1] if len(sys.argv) == 2 else os.environ['BOT_TOKEN'] if 'BOT_TOKEN' in os.environ else None
+
+if token == None:
     print('Ошибка: не указан token!')
     sys.exit()
 
