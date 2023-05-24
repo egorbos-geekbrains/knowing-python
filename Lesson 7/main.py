@@ -41,7 +41,7 @@ if token == None:
 
 numbers = {}
 user_attempts = {}
-bot = telebot.TeleBot(sys.argv[1])
+bot = telebot.TeleBot(token)
 
 def get_clue(number: int):
     rand = randint(1, 5)
