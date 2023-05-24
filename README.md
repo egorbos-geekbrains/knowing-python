@@ -11,3 +11,5 @@
 ## [**Урок 5. Рекурсия и алгоритмы**](https://github.com/egorbos-geekbrains/knowing-python/tree/main/Lesson%205)
 
 ## [**Урок 6. Повторение списков**](https://github.com/egorbos-geekbrains/knowing-python/tree/main/Lesson%206)
+
+## [**Урок 7. Функции высшего порядка**](https://github.com/egorbos-geekbrains/knowing-python/tree/main/Lesson%207)
