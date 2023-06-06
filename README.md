@@ -13,3 +13,5 @@
 ## [**Урок 6. Повторение списков**](https://github.com/egorbos-geekbrains/knowing-python/tree/main/Lesson%206)
 
 ## [**Урок 7. Функции высшего порядка**](https://github.com/egorbos-geekbrains/knowing-python/tree/main/Lesson%207)
+
+## [**Урок 8. Работа с файлами**](https://github.com/egorbos-geekbrains/knowing-python/tree/main/Lesson%208)
