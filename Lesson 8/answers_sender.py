@@ -31,4 +31,7 @@ bot = telebot.TeleBot(token)
 questions = get_questions()
 for question in questions:
     print(f'\nВопрос: {question[1]}')
-    bot.send_message(question[0], input('Ответ: '))
+    answer = input('Ответ: ')
+    bot.send_message(question[0], f"На Ваш вопрос '{question[1]}', получен ответ оператора!\n - {answer}")
+
+input('\nВы ответили на все поступившие вопросы, нажмите Enter для завершения программы...')
