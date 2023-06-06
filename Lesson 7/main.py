@@ -89,4 +89,4 @@ def get_number(message):
             bot.send_message(message.chat.id, f'Ошибка в вводе числа! Будь повнимательнее!')
 
 print('Бот запущен...')
-bot.polling()
+bot.infinity_polling()
