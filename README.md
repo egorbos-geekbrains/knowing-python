@@ -15,3 +15,5 @@
 ## [**Урок 7. Функции высшего порядка**](https://github.com/egorbos-geekbrains/knowing-python/tree/main/Lesson%207)
 
 ## [**Урок 8. Работа с файлами**](https://github.com/egorbos-geekbrains/knowing-python/tree/main/Lesson%208)
+
+## [**Урок 9. Работа с табличными данными**](https://github.com/egorbos-geekbrains/knowing-python/tree/main/Lesson%209)
